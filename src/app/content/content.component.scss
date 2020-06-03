@@ -1,0 +1,39 @@
+.content {
+  padding: 20px;
+}
+
+.category {
+  font-size: 24px;
+  color: #818181;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border: 1px solid #D0D0D0;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cocktail {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.thumb {
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+}

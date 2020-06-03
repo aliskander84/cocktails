@@ -1,7 +1,15 @@
 export type TInputCategories = {
-  'drinks': Array<{'strCategory': string}>
+  'drinks': Array<{strCategory: string}>
 }
 
-export type TCategories = Array<TCategory>
+export type TInputCocktails = {
+  'drinks': Array<{strDrink: string, strDrinkThumb: string, idDrink: string}>
+}
+
+export type TCategories = TCategory[]
 
 export type TCategory = {category: string, selected: boolean}
+
+export type TCocktails = {category: string, cocktails: TCocktail[]}[]
+
+export type TCocktail = {name: string, thumb: string}

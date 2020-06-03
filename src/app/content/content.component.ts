@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core'
+import {DataService} from '../data.service'
+import {TCocktails} from '../types'
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: DataService) {
+  }
 
-  ngOnInit(): void {
+  cocktails: TCocktails = []
+
+  ngOnInit() {
+    this.data.selectedCocktails$.subscribe(cocktails => {
+      this.cocktails = cocktails
+    })
   }
 
 }

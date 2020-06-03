@@ -1,3 +1,11 @@
+.page {
+  display: flex;
+}
+
+.filter {
+  //display: inline-block;
+}
+
 .content {
-  background: red;
+  flex-grow: 1;
 }

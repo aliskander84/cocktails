@@ -1,1 +1,15 @@
-<p>content works!</p>
+<div class="content">
+  <div *ngFor="let category of cocktails" class="category">
+    <div class="category">{{category.category}}</div>
+    <hr class="divider">
+    <div class="grid">
+      <div *ngFor="let cocktail of category.cocktails" class="cocktail">
+        <img class="thumb" [src]="cocktail.thumb" alt=""/>
+        <div class="name">{{cocktail.name}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+

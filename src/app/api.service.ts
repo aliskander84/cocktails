@@ -19,7 +19,7 @@ export class ApiService {
     return this.http.get(`${environment.apiUrl}${this.apis.filters}`)
   }
 
-  getCocktails(filter) {
-    return this.http.get(`${environment.apiUrl}${this.apis.cocktails}${filter}`)
+  getCocktails(category) {
+    return this.http.get(`${environment.apiUrl}${this.apis.cocktails}${category}`)
   }
 }

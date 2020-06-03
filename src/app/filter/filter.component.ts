@@ -15,8 +15,8 @@ export class FilterComponent implements OnInit {
   categories: TCategories = []
 
   ngOnInit() {
-    this.data.getCategories()
-    this.data.categories$.subscribe((categories: TCategories) => {
+    this.data.getData()
+    this.data.allCategories$.subscribe((categories: TCategories) => {
       this.categories = categories
     })
   }
