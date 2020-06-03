@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core'
 
 @Component({
   selector: 'app-filter',
@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilterComponent implements OnInit {
 
-  constructor() { }
+  filters = [
+    {title: 'Mfilter 1', selected: true},
+    {title: 'Mfilter 1', selected: true},
+    {title: 'filter 1', selected: false},
+    {title: 'filter 1', selected: true},
+    {title: 'filter 1', selected: true},
+  ]
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
