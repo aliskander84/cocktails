@@ -37,3 +37,27 @@
   font-size: 18px;
   color: black;
 }
+
+@media screen and (max-width: 1150px){
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
