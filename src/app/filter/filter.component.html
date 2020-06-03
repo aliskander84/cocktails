@@ -1,16 +1,21 @@
 <div class="filter">
   <div
-      *ngFor="let f of filters"
+      *ngFor="let f of categories"
       class="filter-item"
   >
     <label class="label">
       <input
           type="checkbox"
-          value="yes"
           [checked]="f.selected"
+          (change)="f.selected = !f.selected"
           class="checkbox"
-      /><span class="filter-title">{{f.title}}</span>
+      /><span class="filter-title">{{f.category}}</span>
     </label>
   </div>
-  <button class="button">APPLY</button>
+  <button
+      class="button"
+      (click)="apply()"
+  >
+    APPLY
+  </button>
 </div>
