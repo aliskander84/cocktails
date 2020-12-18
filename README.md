@@ -1,2 +1,2 @@
 #Cocktails
-App works [here](https://alexchegash.github.io/cocktails/)
+App works [here](https://aliskander84.github.io/cocktails/)
